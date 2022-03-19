@@ -14,28 +14,29 @@
 </head>
 <body>
   <header id="menu">
+    <!-- Barra de Navegação da Página -->
     <img id="img_logo" src="imagens/K-logo-square.jpg" alt="logo com a letra k">
     <div class="btns_container">
       <a class="btn_header" href="#section_inicio">Início</a>
       <a class="btn_header" href="#section_projetos">Projetos</a>
-      <a class="btn_header" href="#section_contato">Contato</a>
+      <a class="btn_header" href="#section_contatos">Contato</a>
     </div>
   </header>
   <section id="section_inicio">
-
+    <!-- Imagem de background da seção inicial -->
     <img id="img_bg" src="imagens/Background-web.jpg" alt="Mosta os codigos de um projeto">
-
+    <!-- Cartão de Apresentação -->
     <div id="perfil" class="container_inicio">
       <img id="img_perfil" src="imagens/Foto-de-perfil.jpeg" alt="Foto de perifl de Kelvin">
       <h1 class="titulos_principais">Kelvin Ronald</h1>
       <p class="paragrafo_inicio">Olá meu nome é Kelvin Ronald !</p>
       <p class="paragrafo_inicio">Sou Desenvolvedor Font-End e vou mostrar aqui um pouco sobre mim e alguns dos meus projetos.</p>
-      <button id="btn_show_sobremim" class="button_inicio" onclick="show_sobremim()">Sobre mim</button>
+      <button id="btn_show_sobremim" class="button" onclick="show_sobremim()">Sobre mim</button>
     </div>
-
+    <!-- Cartão com mais informações sobre mim -->
     <div id="sobremim" class="container_inicio display_none">
       <div class="header_sobremim">
-        <button id="btn_rem_sobremim" class="button_inicio" onclick="rem_sobremim()">X</button>
+        <button id="btn_rem_sobremim" class="button" onclick="rem_sobremim()">X</button>
       </div>
       <p class="paragrafo_inicio">Cursei Análise e Desenvolvimento de sistemas na UNIP, e foi lá onde tive minha primeira experiência com programação, no curso me identifiquei com a área front-end, onde estudei e treinei através de projetos da faculdade, através dos cursos e bootcamps da Rocketseat e desafios feitos pelo FrontEndMentor posto algumas dessas experiências lá no meu github.</p>
 
@@ -51,7 +52,9 @@
     <h2 class="titulos_principais">Meus Projetos</h2>
     <div class="divider"></div>
     <div id="tabela_projetos">
+      <!-- Primeira linha de projetos -->
       <div class="linha_de_projetos">
+        <!-- Primeiro Projeto -->
         <div class="projeto">
           <div class="imagem_projeto">
             <a href="https://desafio-nft-card.vercel.app/" target="_blank">
@@ -63,7 +66,7 @@
           </a>
           <p class="descricao_projeto">Desafio do site frontmentor, criar um site com um card de nft.</p>
         </div>
-
+        <!-- Segundo Projeto -->
         <div class="projeto">
           <div class="imagem_projeto">
             <a href="https://desafio-music-plataform-card.vercel.app/" target="_blank">
@@ -71,11 +74,11 @@
             </a>
           </div>
           <a href="https://desafio-music-plataform-card.vercel.app/" target="_blank">
-            <b class="titulo_projeto">Card | Plataforma de Musica</b>
+            <b class="titulo_projeto">Cartão | Plataforma de Musica</b>
           </a>          
           <p class="descricao_projeto">Desafio do site frontmentor, criar um site com um cartâo de venda de uma plataforma de música. </p>
         </div>
-
+        <!-- Terceiro Projeto -->
         <div class="projeto">
           <div class="imagem_projeto">
             <a href="https://desafio-nft-card.vercel.app/" target="_blank">
@@ -88,8 +91,9 @@
           <p class="descricao_projeto">Essa é a descrição do projeto</p>
         </div>
       </div>
-
+      <!-- Segunda Linha de Projetos -->
       <div class="linha_de_projetos">
+        <!-- Quarto Projeto -->
         <div class="projeto">
           <div class="imagem_projeto">
             <a href="https://desafio-nft-card.vercel.app/" target="_blank">
@@ -101,7 +105,7 @@
           </a>
           <p class="descricao_projeto">Essa é a descrição do projeto</p>
         </div>
-
+        <!-- Quinto Projeto -->
         <div class="projeto">
           <div class="imagem_projeto">
             <a href="https://desafio-nft-card.vercel.app/" target="_blank">
@@ -113,7 +117,7 @@
           </a>          
           <p class="descricao_projeto">Essa é a descrição do projeto</p>
         </div>
-
+        <!-- Sexto Projeto -->
         <div class="projeto">
           <div class="imagem_projeto">
             <a href="https://desafio-nft-card.vercel.app/" target="_blank">
@@ -129,6 +133,22 @@
     </div>
     
   </section>
+  <footer id="section_contatos">
+    <div id="card_contatos">
+      <h4 class="titulos_principais">Entre em contato</h4>
+      <div id="container_btns_contatos">
+          <a class="button" href="mailto:kelvinronald122@gmail.com">Gmail</a>
+          <a class="button" href="https://github.com/DrKelvin" target="_blank">GitHub</a>
+          <a class="button" href="https://www.linkedin.com/in/kelvin-ronald-1a381b214/" target="_blank">Linkedin</a>
+          <a class="button" href="documentos/Curriculo-Kelvin-Ronald.pdf" >Curriculo</a>
+          <a class="button" href="https://www.instagram.com/kelvin_rlc/" target="_blank">Instagram</a>
+          
+      </div>
+     
+    </div>
+
+    <!-- GitHub, Linkedin, Instagram -->
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ html{
 body{
   height: 100%;
   width: 100%;
-  background-color: #222222;
+  background-color: #262626;
 }
 
 /*==Header Menu==*/
@@ -106,7 +106,7 @@ header{
   z-index: 1;
 }
 
-.button_inicio{
+.button{
   margin: 1rem;
   padding: .5rem .8rem;
   border-radius: 10px;
@@ -130,6 +130,7 @@ header{
 
 .paragrafo_inicio::selection{
   background-color: #e4e4e4;
+  color: #222222;
 }
 
 .titulos_principais{
@@ -198,17 +199,9 @@ header{
   width: 100%;
 }
 
-#sobremim button{
-  border-radius: 50%;
-}
-
 #sobremim button:hover{
   background-color: #e4e4e4;
   color: black;
-}
-
-#sobremim button::before{
-  height: 0;
 }
 
 #sobremim p{
@@ -220,7 +213,7 @@ header{
   padding-top: 0;
 }
 
-/*==Projetos== */
+/*==Projetos==*/
 
 #section_projetos{
   position: relative;
@@ -257,7 +250,7 @@ header{
 }
 
 .linha_de_projetos{
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .projeto{
@@ -281,6 +274,11 @@ header{
 .projeto .imagem_projeto a img{
   width: 420px;
   height: 240px;
+  transition: all .2s;
+}
+
+.projeto .imagem_projeto a img:hover{
+  transform: scale(.98);
 }
 
 .titulo_projeto , .descricao_projeto{
@@ -302,4 +300,77 @@ header{
   width: 400px;
   font-size: .9rem;
   color: #9c9c9c;
+
+}
+
+.descricao_projeto::selection{
+  background-color: black;
+  color: white;
+}
+
+/*==Contatos==*/
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(60px + 1rem);
+}
+
+footer h3{
+  margin-top: calc(2rem + 65px);
+  padding-bottom: 1rem;
+}
+
+#card_contatos{
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+#card_contatos .titulos_principais{
+  padding: 1rem 4rem 0rem 4rem;
+}
+
+#card_contatos a{
+  border: white solid 2px;
+  color: white;
+  text-decoration: none;
+  margin: 1.2rem;
+  z-index: 0;
+}
+
+#card_contatos a:hover{
+  color: black;
+}
+
+#card_contatos a::before{
+  position: absolute;
+  content: "";
+  background-color: white;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 0;
+  z-index: -1;
+  transition: all .5s ease;
+}
+
+#card_contatos a:hover::before{
+  width: 100%;
+}
+
+#card_contatos #container_btns_contatos{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
