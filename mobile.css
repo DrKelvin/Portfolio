@@ -1,0 +1,76 @@
+@media (max-width: 500px){
+  
+  /* Header */
+
+  #img_logo{
+    height: 30px;
+    margin-left: 1.5rem;
+  }
+
+  .btns_container{
+    margin-left: 2rem;
+    width: 280px;
+  }
+
+  .btn_header{
+    font-size: .9rem;
+  }
+
+  /* Home */
+
+  #img_bg{
+    filter: blur(1px);
+    object-fit: cover;
+    object-position: left;
+  }
+
+  /* Presentation */
+
+  .container_inicio{
+    width: 70%;
+    height: 50%;
+    border: 2px #e4e4e4 solid;
+  }
+
+  .paragrafo_inicio{
+    font-size: .9rem;
+  }
+
+  #img_perfil{
+    width: 100px;
+    border: 2px #e4e4e4 solid;
+  }
+
+  #perfil h1{
+    font-size: 1.5rem;
+  }
+
+  #perfil p:first-of-type{
+    padding: 1rem;
+  }
+
+  #perfil p:last-of-type{
+    width: 250px;
+  }
+
+  #perfil button{
+    margin-top: 3rem;
+    font-size: .8rem;
+  }
+
+  /* Projects */
+
+  #section_projetos{
+    display: none;
+  }
+
+  .linha_de_projetos{
+    flex-direction: column;
+  }
+
+  /* Contacts */
+
+  footer{
+    display: none;
+  }
+}
